@@ -1,0 +1,3 @@
+// Force strict mode and setup for ESM
+"use strict";
+import{BadRequestError,FatalAuthenticationError,FatalBudgetExceededError,FatalCancellationError,FatalConfigError,FatalError,FatalInputError,FatalSandboxError,FatalToolExecutionError,FatalTurnLimitedError,ForbiddenError,UnauthorizedError,getErrorMessage,getErrorStatus,getErrorType,isAbortError,isNodeError,toFriendlyError}from"./chunk-XYB7GC5U.js";import"./chunk-VKDAXTCZ.js";import"./chunk-KBWJGX7I.js";export{BadRequestError,FatalAuthenticationError,FatalBudgetExceededError,FatalCancellationError,FatalConfigError,FatalError,FatalInputError,FatalSandboxError,FatalToolExecutionError,FatalTurnLimitedError,ForbiddenError,UnauthorizedError,getErrorMessage,getErrorStatus,getErrorType,isAbortError,isNodeError,toFriendlyError};

@@ -1,0 +1,145 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.qwen.mobile"
+4    android:versionCode="2"
+5    android:versionName="0.2.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="26"
+8-->INJECTED
+9        android:targetSdkVersion="28" />
+9-->INJECTED
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:4:5-67
+11-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:5:5-79
+12-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:6:5-68
+13-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:6:22-65
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:7:5-77
+14-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:7:22-74
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+15-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:8:5-87
+15-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:8:22-84
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:9:5-77
+16-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:9:22-74
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:10:5-80
+17-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:10:22-77
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:11:5-81
+18-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:11:22-78
+19
+20    <application
+20-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:13:5-70:19
+21        android:allowBackup="false"
+21-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:14:9-36
+22        android:extractNativeLibs="false"
+22-->INJECTED
+23        android:hardwareAccelerated="true"
+23-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:15:9-43
+24        android:icon="@mipmap/ic_launcher"
+24-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:16:9-43
+25        android:label="@string/app_name"
+25-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:17:9-41
+26        android:requestLegacyExternalStorage="true"
+26-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:18:9-52
+27        android:supportsRtl="true"
+27-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:19:9-35
+28        android:theme="@style/AppTheme"
+28-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:20:9-40
+29        android:usesCleartextTraffic="true" >
+29-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:21:9-44
+30        <activity
+30-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:23:9-33:20
+31            android:name="com.qwen.mobile.MainActivity"
+31-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:24:13-41
+32            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout|uiMode"
+32-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:25:13-113
+33            android:exported="true"
+33-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:26:13-36
+34            android:launchMode="singleTask"
+34-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:27:13-44
+35            android:windowSoftInputMode="adjustResize" >
+35-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:28:13-55
+36            <intent-filter>
+36-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:29:13-32:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:30:17-69
+37-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:30:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:31:17-77
+39-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:31:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity
+42-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:35:9-39:58
+43            android:name="com.qwen.mobile.TerminalActivity"
+43-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:36:13-45
+44            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout|uiMode"
+44-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:37:13-113
+45            android:exported="false"
+45-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:38:13-37
+46            android:windowSoftInputMode="adjustResize" />
+46-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:39:13-55
+47        <activity
+47-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:41:9-45:58
+48            android:name="com.qwen.mobile.BrowserActivity"
+48-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:42:13-44
+49            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout|uiMode"
+49-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:43:13-113
+50            android:exported="false"
+50-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:44:13-37
+51            android:windowSoftInputMode="adjustResize" />
+51-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:45:13-55
+52        <activity
+52-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:47:9-51:58
+53            android:name="com.qwen.mobile.PluginsActivity"
+53-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:48:13-44
+54            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout|uiMode"
+54-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:49:13-113
+55            android:exported="false"
+55-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:50:13-37
+56            android:windowSoftInputMode="adjustResize" />
+56-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:51:13-55
+57        <activity
+57-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:53:9-57:58
+58            android:name="com.qwen.mobile.PluginSettingsActivity"
+58-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:54:13-51
+59            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout|uiMode"
+59-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:55:13-113
+60            android:exported="false"
+60-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:56:13-37
+61            android:windowSoftInputMode="adjustResize" />
+61-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:57:13-55
+62        <activity
+62-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:59:9-63:58
+63            android:name="com.qwen.mobile.PluginConsoleActivity"
+63-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:60:13-50
+64            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout|uiMode"
+64-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:61:13-113
+65            android:exported="false"
+65-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:62:13-37
+66            android:windowSoftInputMode="adjustResize" />
+66-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:63:13-55
+67
+68        <service
+68-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:65:9-69:44
+69            android:name="com.qwen.mobile.QwenService"
+69-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:66:13-40
+70            android:exported="false"
+70-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:67:13-37
+71            android:foregroundServiceType="dataSync"
+71-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:68:13-53
+72            android:stopWithTask="false" />
+72-->/data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:69:13-41
+73    </application>
+74
+75</manifest>

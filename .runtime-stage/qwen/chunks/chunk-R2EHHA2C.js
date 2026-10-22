@@ -1,0 +1,8 @@
+// Force strict mode and setup for ESM
+"use strict";
+import{init_esbuild_shims}from"./chunk-VKDAXTCZ.js";import{__name}from"./chunk-KBWJGX7I.js";init_esbuild_shims();var TERMINAL_OSC_REGEX=/\x1b\][^\x07\x1b]*(?:\x07|\x1b\\)/g;var TERMINAL_CSI_REGEX=/\x1b\[[\d;?]*[a-zA-Z]/g;var TERMINAL_SHIFT_DCS_REGEX=/\x1b[NOP]/g;function stripTerminalControlSequences(s){return s.replace(TERMINAL_OSC_REGEX," ").replace(TERMINAL_CSI_REGEX," ").replace(TERMINAL_SHIFT_DCS_REGEX," ").replace(/[\x00-\x1f\x7f-\x9f]/g," ")}__name(stripTerminalControlSequences,"stripTerminalControlSequences");function isBidiControlChar(code){return code>=8234&&code<=8238||code>=8294&&code<=8297}__name(isBidiControlChar,"isBidiControlChar");function stripDisplayControlChars(text){let out="";for(let i=0;i<text.length;i++){const code=text.charCodeAt(i);if(code===9){out+=text[i];continue}if(code<32)continue;if(code>=128&&code<=159)continue;if(isBidiControlChar(code))continue;out+=text[i]}return out}__name(stripDisplayControlChars,"stripDisplayControlChars");var NOTIFICATION_LABEL_MAX_LENGTH=80;function truncateNotificationLabel(label){const normalized=stripDisplayControlChars(label).replace(/\s+/g," ").trim();const codePoints=[...normalized];if(codePoints.length<=NOTIFICATION_LABEL_MAX_LENGTH){return normalized}return codePoints.slice(0,NOTIFICATION_LABEL_MAX_LENGTH-3).join("")+"..."}__name(truncateNotificationLabel,"truncateNotificationLabel");export{TERMINAL_OSC_REGEX,TERMINAL_CSI_REGEX,TERMINAL_SHIFT_DCS_REGEX,stripTerminalControlSequences,isBidiControlChar,stripDisplayControlChars,truncateNotificationLabel};
+/**
+ * @license
+ * Copyright 2025 Qwen Code
+ * SPDX-License-Identifier: Apache-2.0
+ */

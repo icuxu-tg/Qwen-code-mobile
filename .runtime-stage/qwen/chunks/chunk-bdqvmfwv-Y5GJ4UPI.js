@@ -1,0 +1,3 @@
+// Force strict mode and setup for ESM
+"use strict";
+import"./chunk-MZ6EODMK.js";import{require_backend}from"./chunk-KBRAZFQD.js";import{init_esbuild_shims}from"./chunk-VKDAXTCZ.js";import{__toESM}from"./chunk-KBWJGX7I.js";init_esbuild_shims();var import_react_devtools_core=__toESM(require_backend(),1);var g=globalThis;if(typeof g.WebSocket==="undefined"){try{const ws=await import("./wrapper-77DE3RHI.js");g.WebSocket=ws.default}catch{}}g.window||=globalThis;g.self||=globalThis;g.window.__REACT_DEVTOOLS_COMPONENT_FILTERS__=[{type:2,value:"ErrorBoundary",isEnabled:true,isValid:true}];import_react_devtools_core.default.initialize();import_react_devtools_core.default.connectToDevTools();

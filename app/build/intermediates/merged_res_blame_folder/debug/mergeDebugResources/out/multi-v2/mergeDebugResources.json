@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.qwen.mobile.app-debug-3:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/data/data/com.termux/files/home/qwen-mobile/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "46",
+                        "endOffsets": "97"
+                    }
+                },
+                {
+                    "source": "/data/data/com.termux/files/home/qwen-mobile/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "11",
+                        "endColumns": "12",
+                        "endOffsets": "631"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endLines": "12",
+                        "endColumns": "12",
+                        "endOffsets": "678"
+                    }
+                }
+            ]
+        }
+    ]
+}

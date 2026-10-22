@@ -1,0 +1,3 @@
+// Force strict mode and setup for ESM
+"use strict";
+import{CUSTOM_SANDBOX_IMAGE_ENV_VAR,HOST_UPDATE_RELAUNCH_ENV_VAR,RELAUNCH_EXIT_CODE,SKIP_UPDATE_CHECK_ENV_VAR,UPDATE_COMPLETE_EXIT_CODE,UPDATE_ON_EXIT_MESSAGE,UPDATE_RELAUNCH_EXIT_CODE,exitCleanly,getRelaunchExecArgv,relaunchApp,relaunchForUpdate,requestUpdateOnExit,superviseInProcess}from"./chunk-6TKAJXEG.js";import"./chunk-3JJKO3HY.js";import"./chunk-VKDAXTCZ.js";import"./chunk-KBWJGX7I.js";export{CUSTOM_SANDBOX_IMAGE_ENV_VAR,HOST_UPDATE_RELAUNCH_ENV_VAR,RELAUNCH_EXIT_CODE,SKIP_UPDATE_CHECK_ENV_VAR,UPDATE_COMPLETE_EXIT_CODE,UPDATE_ON_EXIT_MESSAGE,UPDATE_RELAUNCH_EXIT_CODE,exitCleanly,getRelaunchExecArgv,relaunchApp,relaunchForUpdate,requestUpdateOnExit,superviseInProcess};

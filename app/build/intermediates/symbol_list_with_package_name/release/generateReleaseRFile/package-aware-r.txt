@@ -1,0 +1,5 @@
+com.qwen.mobile
+drawable ic_stat_qwen
+mipmap ic_launcher
+string app_name
+style AppTheme

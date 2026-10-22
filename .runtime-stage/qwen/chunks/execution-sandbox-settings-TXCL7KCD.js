@@ -1,0 +1,3 @@
+// Force strict mode and setup for ESM
+"use strict";
+import{BWRAP_MIGRATION_MESSAGE,InvalidExecutionSandboxConfigError,assertExecutionSandboxSupported,parseExecutionSandboxSettings,readBareModeOperatorSettings,readOperatorSandboxSettings,selectOperatorExecutionSandbox,stripUtf8Bom,validateExecutionSandboxSelection}from"./chunk-DOLUT3XC.js";import"./chunk-PTHIQ7ZN.js";import"./chunk-XYB7GC5U.js";import"./chunk-VKDAXTCZ.js";import"./chunk-KBWJGX7I.js";export{BWRAP_MIGRATION_MESSAGE,InvalidExecutionSandboxConfigError,assertExecutionSandboxSupported,parseExecutionSandboxSettings,readBareModeOperatorSettings,readOperatorSandboxSettings,selectOperatorExecutionSandbox,stripUtf8Bom,validateExecutionSandboxSelection};

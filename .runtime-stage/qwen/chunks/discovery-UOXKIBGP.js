@@ -1,0 +1,3 @@
+// Force strict mode and setup for ESM
+"use strict";
+import{LIVE_DISCOVERY_RELATIVE_PATH,LiveDiscoveryOwnerActiveError,LiveDiscoveryPublicationError,LiveDiscoveryStateError,assertLiveDiscoveryPublisher,getLiveDiscoveryPath,getStableLiveDiscoveryBaseDir,handoffLiveDiscoveryOwner,removeLiveDiscoveryFile,writeLiveDiscoveryFile}from"./chunk-IKPFQWQR.js";import"./chunk-QSHWWIZT.js";import"./chunk-VKDAXTCZ.js";import"./chunk-KBWJGX7I.js";export{LIVE_DISCOVERY_RELATIVE_PATH,LiveDiscoveryOwnerActiveError,LiveDiscoveryPublicationError,LiveDiscoveryStateError,assertLiveDiscoveryPublisher,getLiveDiscoveryPath,getStableLiveDiscoveryBaseDir,handoffLiveDiscoveryOwner,removeLiveDiscoveryFile,writeLiveDiscoveryFile};

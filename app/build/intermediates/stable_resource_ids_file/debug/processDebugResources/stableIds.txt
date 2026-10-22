@@ -1,0 +1,4 @@
+com.qwen.mobile:style/AppTheme = 0x7f040000
+com.qwen.mobile:string/app_name = 0x7f030000
+com.qwen.mobile:mipmap/ic_launcher = 0x7f020000
+com.qwen.mobile:drawable/ic_stat_qwen = 0x7f010000

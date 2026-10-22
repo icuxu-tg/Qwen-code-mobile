@@ -1,0 +1,3 @@
+// Force strict mode and setup for ESM
+"use strict";
+import{beginAcpBootstrapConfigProfiling,buildAndFreezeAcpStartupProfile,endAcpBootstrapConfigProfiling,initializeAcpStartupProfiler,isAcpStartupProfilerEnabled,markAcpStartup,recordAcpConfigStartupEvent,resetAcpStartupProfilerForTesting}from"./chunk-XRVEZKVE.js";import"./chunk-WBDNGVHU.js";import"./chunk-VKDAXTCZ.js";import"./chunk-KBWJGX7I.js";export{beginAcpBootstrapConfigProfiling,buildAndFreezeAcpStartupProfile,endAcpBootstrapConfigProfiling,initializeAcpStartupProfiler,isAcpStartupProfilerEnabled,markAcpStartup,recordAcpConfigStartupEvent,resetAcpStartupProfilerForTesting};

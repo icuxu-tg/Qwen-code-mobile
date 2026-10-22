@@ -1,0 +1,157 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:2:1-71:12
+	package
+		INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:6:5-68
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:6:22-65
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:7:5-77
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:7:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_DATA_SYNC
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:8:5-87
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:8:22-84
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:9:5-77
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:9:22-74
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:10:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:11:22-78
+application
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:13:5-70:19
+INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:13:5-70:19
+	android:extractNativeLibs
+		INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml
+	android:requestLegacyExternalStorage
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:18:9-52
+	android:supportsRtl
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:19:9-35
+	android:label
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:17:9-41
+	android:hardwareAccelerated
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:15:9-43
+	android:icon
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:16:9-43
+	android:allowBackup
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:14:9-36
+	android:theme
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:20:9-40
+	android:usesCleartextTraffic
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:21:9-44
+activity#com.qwen.mobile.MainActivity
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:23:9-33:20
+	android:launchMode
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:27:13-44
+	android:windowSoftInputMode
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:28:13-55
+	android:exported
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:26:13-36
+	android:configChanges
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:25:13-113
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:24:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:29:13-32:29
+action#android.intent.action.MAIN
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:31:17-77
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:31:27-74
+activity#com.qwen.mobile.TerminalActivity
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:35:9-39:58
+	android:windowSoftInputMode
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:39:13-55
+	android:exported
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:38:13-37
+	android:configChanges
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:37:13-113
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:36:13-45
+activity#com.qwen.mobile.BrowserActivity
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:41:9-45:58
+	android:windowSoftInputMode
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:45:13-55
+	android:exported
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:44:13-37
+	android:configChanges
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:43:13-113
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:42:13-44
+activity#com.qwen.mobile.PluginsActivity
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:47:9-51:58
+	android:windowSoftInputMode
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:51:13-55
+	android:exported
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:50:13-37
+	android:configChanges
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:49:13-113
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:48:13-44
+activity#com.qwen.mobile.PluginSettingsActivity
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:53:9-57:58
+	android:windowSoftInputMode
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:57:13-55
+	android:exported
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:56:13-37
+	android:configChanges
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:55:13-113
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:54:13-51
+activity#com.qwen.mobile.PluginConsoleActivity
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:59:9-63:58
+	android:windowSoftInputMode
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:63:13-55
+	android:exported
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:62:13-37
+	android:configChanges
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:61:13-113
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:60:13-50
+service#com.qwen.mobile.QwenService
+ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:65:9-69:44
+	android:exported
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:67:13-37
+	android:stopWithTask
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:69:13-41
+	android:foregroundServiceType
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:68:13-53
+	android:name
+		ADDED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml:66:13-40
+uses-sdk
+INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml
+INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /data/data/com.termux/files/home/qwen-mobile/app/src/main/AndroidManifest.xml

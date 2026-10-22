@@ -1,0 +1,63 @@
+{
+  "name": "@qwen-code/qwen-code",
+  "version": "0.25.3",
+  "description": "Qwen Code - AI-powered coding assistant",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QwenLM/qwen-code.git"
+  },
+  "type": "module",
+  "main": "cli.js",
+  "bin": {
+    "qwen": "cli-entry.js"
+  },
+  "files": [
+    "cli-entry.js",
+    "cli.js",
+    "execution-worker.js",
+    "fzfWorker.js",
+    "glob-search-worker.js",
+    "codeModeHost.js",
+    "mod-worker.js",
+    "sandboxBwrapRelay.js",
+    "sandboxLandlockRelay.js",
+    "sandboxFileWorker.js",
+    "mem0",
+    "chunks",
+    "vendor",
+    "*.sb",
+    "README.md",
+    "LICENSE",
+    "locales",
+    "examples",
+    "bundled",
+    "web-shell",
+    "export-transcript-document.js",
+    "export-transcript-document.css"
+  ],
+  "config": {
+    "sandboxImageUri": "ghcr.io/qwenlm/qwen-code:0.25.3"
+  },
+  "dependencies": {},
+  "optionalDependencies": {
+    "@qwen-code/audio-capture": "0.25.3",
+    "@lydell/node-pty": "1.2.0-beta.10",
+    "@lydell/node-pty-darwin-arm64": "1.2.0-beta.10",
+    "@lydell/node-pty-darwin-x64": "1.2.0-beta.10",
+    "@lydell/node-pty-linux-arm64": "1.2.0-beta.10",
+    "@lydell/node-pty-linux-x64": "1.2.0-beta.10",
+    "@lydell/node-pty-win32-arm64": "1.2.0-beta.10",
+    "@lydell/node-pty-win32-x64": "1.2.0-beta.10",
+    "@teddyzhu/clipboard": "0.0.5",
+    "@teddyzhu/clipboard-darwin-arm64": "0.0.5",
+    "@teddyzhu/clipboard-darwin-x64": "0.0.5",
+    "@teddyzhu/clipboard-linux-x64-gnu": "0.0.5",
+    "@teddyzhu/clipboard-linux-arm64-gnu": "0.0.5",
+    "@teddyzhu/clipboard-win32-x64-msvc": "0.0.5",
+    "@teddyzhu/clipboard-win32-arm64-msvc": "0.0.5",
+    "sharp": "0.35.4"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

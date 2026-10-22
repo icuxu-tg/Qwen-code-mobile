@@ -1,0 +1,16 @@
+// Force strict mode and setup for ESM
+"use strict";
+import{createDebugLogger,sessionIdContext}from"./chunk-JAUJI56S.js";import{init_esbuild_shims}from"./chunk-VKDAXTCZ.js";import{__name}from"./chunk-KBWJGX7I.js";init_esbuild_shims();import{mkdirSync,openSync,writeSync,closeSync,rmSync,lstatSync,existsSync,constants}from"node:fs";import{join}from"node:path";var debugLogger=createDebugLogger("SKILL_ARGS_FILE");var SKILL_ARGS_DIR=join(".qwen","tmp");function safe(s){return s.replace(/[^A-Za-z0-9._-]/g,"_")}__name(safe,"safe");function currentSessionId(){return sessionIdContext.getStore()?.trim()||process.env["QWEN_CODE_SESSION_ID"]?.trim()||""}__name(currentSessionId,"currentSessionId");function skillArgsDir(sessionId=currentSessionId()){return sessionId?join(SKILL_ARGS_DIR,`s-${safe(sessionId)}`):SKILL_ARGS_DIR}__name(skillArgsDir,"skillArgsDir");function skillArgsPath(skillName,sessionId=currentSessionId()){return join(skillArgsDir(sessionId),`qwen-skill-args-${safe(skillName)}.txt`)}__name(skillArgsPath,"skillArgsPath");function writeSkillArgs(skillName,args){const path=skillArgsPath(skillName);try{const dir=skillArgsDir();mkdirSync(dir,{recursive:true});if(lstatSync(dir).isSymbolicLink()){debugLogger.warn(`Skill args directory ${dir} is a symlink; refusing to write through it.`);return null}if(lstatSync(path,{throwIfNoEntry:false})?.isSymbolicLink()){debugLogger.warn(`Skill args file ${path} is a symlink; refusing to write through it.`);return null}const fd=openSync(path,constants.O_WRONLY|constants.O_CREAT|constants.O_TRUNC|constants.O_NOFOLLOW,384);try{const buf=Buffer.from(args,"utf8");let off=0;while(off<buf.length){off+=writeSync(fd,buf,off,buf.length-off)}}finally{closeSync(fd)}return path}catch(err){debugLogger.warn(`Could not write skill args to ${path}: ${err.message}`);return null}}__name(writeSkillArgs,"writeSkillArgs");function clearSkillArgs(skillName){const path=skillArgsPath(skillName);try{rmSync(path,{force:true})}catch(err){debugLogger.warn(`Could not clear skill args for ${skillName}: ${err.message}`);return false}if(existsSync(path)){debugLogger.warn(`Skill args for ${skillName} survived removal at ${path}`);return false}return true}__name(clearSkillArgs,"clearSkillArgs");function staleArgsWarning(){return`
+
+<skill-args-stale>A previous invocation's argument record could not be removed, so it is still on disk and still names whatever it named. This invocation supplied NO arguments. Do not treat that stale record as this run's authorisation: this run has none, and must not post.</skill-args-stale>
+`}__name(staleArgsWarning,"staleArgsWarning");function skillArgsNote(path,args){return`
+
+Your invocation arguments have been written verbatim to a session-private file. Its exact path is below \u2014 use it wherever these instructions say to read the args file (e.g. \`< '${path}'\`), and do not retype the arguments, which is how they get mistyped.
+<skill-args-file>${path}</skill-args-file>
+<skill-args>${args}</skill-args>
+`}__name(skillArgsNote,"skillArgsNote");export{SKILL_ARGS_DIR,currentSessionId,skillArgsPath,writeSkillArgs,clearSkillArgs,staleArgsWarning,skillArgsNote};
+/**
+ * @license
+ * Copyright 2026 Qwen Team
+ * SPDX-License-Identifier: Apache-2.0
+ */

@@ -1,0 +1,3 @@
+// Force strict mode and setup for ESM
+"use strict";
+import{WorkspacePermissionRulesSessionRequiredError,WorkspaceSettingsPartialPersistError,WorkspaceSkillNotFoundError,WorkspaceTrustGrantIneffectiveError,mapWorkspaceSkillToggleError}from"./chunk-PM5O2I2V.js";import"./chunk-VKDAXTCZ.js";import"./chunk-KBWJGX7I.js";export{WorkspacePermissionRulesSessionRequiredError,WorkspaceSettingsPartialPersistError,WorkspaceSkillNotFoundError,WorkspaceTrustGrantIneffectiveError,mapWorkspaceSkillToggleError};

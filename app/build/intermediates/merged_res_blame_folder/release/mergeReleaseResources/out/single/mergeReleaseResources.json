@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.qwen.mobile.app-release-3:/drawable_ic_stat_qwen.xml.flat",
+        "source": "com.qwen.mobile.app-main-4:/drawable/ic_stat_qwen.xml"
+    },
+    {
+        "merged": "com.qwen.mobile.app-release-3:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.qwen.mobile.app-main-4:/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]

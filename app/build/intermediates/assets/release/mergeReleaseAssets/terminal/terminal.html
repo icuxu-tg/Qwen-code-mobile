@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<link rel="stylesheet" href="xterm.css">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #0d0d0d;
+  }
+  #terminal {
+    position: absolute;
+    inset: 0;
+    padding: 6px 4px 6px 8px;
+    box-sizing: border-box;
+  }
+  .xterm {
+    height: 100%;
+  }
+  .xterm-viewport {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #111;
+  }
+  #hint {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 8px;
+    color: #777;
+    font: 11px monospace;
+    pointer-events: none;
+    opacity: 0.7;
+  }
+</style>
+</head>
+<body>
+<div id="terminal"></div>
+<div id="hint">нажмите, чтобы открыть клавиатуру</div>
+<script src="xterm.js"></script>
+<script src="addon-fit.js"></script>
+<script>
+(function () {
+  "use strict";
+  var term = new Terminal({
+    cursorBlink: true,
+    cursorStyle: "bar",
+    fontFamily: "monospace",
+    fontSize: 13,
+    lineHeight: 1.15,
+    scrollback: 5000,
+    convertEol: false,
+    allowProposedApi: true,
+    theme: {
+      background: "#0d0d0d",
+      foreground: "#e8e8e8",
+      cursor: "#b9afff",
+      selectionBackground: "#3a3a5a",
+      black: "#1a1a1a",
+      red: "#ff8a80",
+      green: "#9ccc65",
+      yellow: "#ffd54f",
+      blue: "#8ab4f8",
+      magenta: "#d7aefb",
+      cyan: "#80cbc4",
+      white: "#eeeeee",
+      brightBlack: "#666666",
+      brightRed: "#ffab91",
+      brightGreen: "#c5e1a5",
+      brightYellow: "#ffe082",
+      brightBlue: "#aecbfa",
+      brightMagenta: "#e1bee7",
+      brightCyan: "#b2dfdb",
+      brightWhite: "#ffffff"
+    }
+  });
+  var fit = new FitAddon.FitAddon();
+  term.loadAddon(fit);
+  term.open(document.getElementById("terminal"));
+
+  function bridgeAvailable() {
+    return typeof window.AndroidTerminal !== "undefined" &&
+      window.AndroidTerminal !== null;
+  }
+
+  function fitNow() {
+    try {
+      fit.fit();
+    } catch (e) {
+      // размер ещё не посчитан
+    }
+  }
+
+  var started = false;
+  function start() {
+    if (started) return;
+    started = true;
+    fitNow();
+    if (!bridgeAvailable()) {
+      term.writeln("Терминал недоступен: нет моста Android.");
+      return;
+    }
+    try {
+      window.AndroidTerminal.start(term.cols, term.rows);
+    } catch (e) {
+      term.writeln("Ошибка запуска: " + e);
+    }
+  }
+
+  term.onData(function (data) {
+    if (!bridgeAvailable()) return;
+    try {
+      window.AndroidTerminal.input(data);
+    } catch (e) {
+      // процесс уже мог завершиться
+    }
+  });
+
+  window.termWrite = function (text) {
+    term.write(text);
+  };
+  window.termReset = function () {
+    term.reset();
+    fitNow();
+  };
+  window.termFocus = function () {
+    term.focus();
+  };
+
+  window.addEventListener("resize", function () {
+    fitNow();
+    if (started && bridgeAvailable()) {
+      try {
+        window.AndroidTerminal.resize(term.cols, term.rows);
+      } catch (e) {
+      }
+    }
+  });
+  document.addEventListener("click", function () {
+    term.focus();
+  });
+  setTimeout(function () {
+    fitNow();
+    start();
+    term.focus();
+  }, 80);
+  setTimeout(function () {
+    fitNow();
+  }, 600);
+})();
+</script>
+</body>
+</html>
